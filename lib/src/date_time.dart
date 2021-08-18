@@ -327,7 +327,7 @@ class TZDateTime implements DateTime {
       var offH = _twoDigits(offset ~/ 3600);
       var offM = _twoDigits((offset % 3600) ~/ 60);
 
-      return "$y-$m-$d$sep$h:$min:$sec.$ms$us$offSign$offH$offM";
+      return "$y-$m-$d$sep$h:$min:$sec.$ms$us$offSign$offH:$offM";
     }
   }
 
